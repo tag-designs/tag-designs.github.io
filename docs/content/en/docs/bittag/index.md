@@ -101,7 +101,7 @@ be "ganged" together and connected by a single USB connection.
 
 The adjacent image
 illustrates three such chargers (only one USB connector is used per 'gang').  These chargers can
-be built relatively inexpensively (under $50/each in small quantities).
+be built relatively inexpensively (under \$50/each in small quantities).
 
 {{< /class >}}
 {{< class "pure-u-1-4 pa3" >}}
@@ -164,7 +164,6 @@ The Tag Monitor provides access to these configuration options.
 
 The Tag Monitor software is highly configurable and is designed so that it can be extended to support additional types of sensors and 
 data storage strategies.  The specific options shown are automatically customized to the tag being configured.   In addition, we provide support for batch testing and configuration of tags through separate command-line tools.
-
 
 
 

@@ -31,7 +31,7 @@ it is necessary to supplement batteries with capacitors.
 **Batteries** While there are many possible battery chemistries,
 we have restricted our attention to rechargeable cells with voltages greater than 2 volts.  The most obvious choices are Lithium Polymer (Li-Po) and Lithium Manganese (Li-Mn).  The smallest
 available Li-Po cells weigh approximately 0.4g and have relatively high peak power delivery (e.g. 10mA),
-but they have several significant limitations -- it is difficult to obtain small quantities of well characterized sub-gram Li-Po batteries, the cells are physically fragile, and their peak voltage (4.2\si{\volt})
+but they have several significant limitations -- it is difficult to obtain small quantities of well characterized sub-gram Li-Po batteries, the cells are physically fragile, and their peak voltage ($4.2\ \mathrm{V}$)
 necessitates additional circuitry for power management.
 
 
@@ -131,7 +131,7 @@ light, pressure, and temperature can be combined with weather data to determine 
 
 ## Results 
 
-We "built" three prototype tags using the breakout board illustrated in Fig.~\ref{fig:tagbreakout}, 
+We "built" three prototype tags using the breakout board illustrated in the figure above, 
 commercial sensor evaluation boards for the accelerometer (STEVAL-MKI179V1) and pressure sensor  (STEVAL-MKI213V1) tags; and  a custom sensor board for the light sensor board.  The accelerometer was configured to be ``always on'' and the 
 other sensors had their power supplied through a processor pin.  We modified the pressure sensor board by removing 
 a $10 \mu F$ capacitor.  
@@ -221,8 +221,8 @@ it's clear that we need to be thoughtful about our use of larger value capacitor
 insulation resistance formula is very conservative (perhaps as much a 10x) as described in this [study](https://escies.org/download/webDocumentFile?id=60885).
 
 Most of the capacitors in our tag designs are quite small; however, we do require at least one larger capacitor to support
-writing the on-chip flash.  For the stm32l4 processors, writing 64-bits takes $ 90\mu s $ at $
-3.4 mA $ or 
+writing the on-chip flash.  For the stm32l4 processors, writing 64-bits takes $90\ \mu s$ at
+$3.4\ \mathrm{mA}$ or 
 $  2.5 V \times 3.4 \times 10^{-3} A \times 9.0 \times 10^{-5} s == 0.765 \mu J $ 
 at 2.5 Volts.
 The energy stored in a capacitor is 

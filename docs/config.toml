@@ -92,6 +92,11 @@ description = "Ultralight data loggers for songbirds"
       definitionList = true
       footnote = true
       linkify = true
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)'], ['$', '$']]
       strikethrough = true
       table = true
       taskList = true
