@@ -66,7 +66,7 @@ jobs:
           echo "dirs:  $(find site -type d | wc -l)"
           echo "deepest paths:"
           find site -type f | awk -F/ '{print NF, $0}' | sort -rn | head -5 | cut -d' ' -f2-
-          test -f site/docs/architecture/hardware/index.html \
+          test -f site/architecture/hardware/index.html \
             || { echo "a known deep page is missing from the build"; exit 1; }
 
       - name: Upload Pages artifact
