@@ -15,7 +15,7 @@ BitTag has been used in a variety of experiments with both captive and free anim
 </div>
 <div class="pure-u-1-4 pa3" markdown>
 
-![](../../images/tagv6.png)
+![](../images/tagv6.png)
 
 </div>
 
@@ -35,7 +35,7 @@ remarkably low energy (300nA), but very effective at tracking bird activity beca
 </div>
 <div class="pure-u-1-3 pa3" markdown>
 
-![](../../images/activity-monitor.png)
+![](../images/activity-monitor.png)
 
 </div>
 

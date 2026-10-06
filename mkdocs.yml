@@ -77,28 +77,27 @@ nav:
   - About: index.md
   - Background: background/index.md
   - Documentation:
-    - Overview: docs/index.md
-    - BitTag: docs/bittag/index.md
+    - BitTag: bittag/index.md
     - User Guides:
-      - Overview: docs/userguides/index.md
-      - Preparing for Flight: docs/userguides/preflight/index.md
-      - Tag Configuration: docs/userguides/qtmon/index.md
-      - Loop Harnesses: docs/userguides/legharness/index.md
-      - Visualization: docs/userguides/btviz/index.md
-      - Command-Line Tools: docs/userguides/cli/index.md
+      - Overview: userguides/index.md
+      - Preparing for Flight: userguides/preflight/index.md
+      - Tag Configuration: userguides/qtmon/index.md
+      - Loop Harnesses: userguides/legharness/index.md
+      - Visualization: userguides/btviz/index.md
+      - Command-Line Tools: userguides/cli/index.md
       - Fabrication:
-        - Overview: docs/userguides/fabrication/index.md
-        - Tools: docs/userguides/fabrication/Tools/index.md
+        - Overview: userguides/fabrication/index.md
+        - Tools: userguides/fabrication/Tools/index.md
     - Tag Architecture:
-      - Overview: docs/architecture/index.md
-      - Hardware Architecture: docs/architecture/hardware.md
-      - Software Architecture: docs/architecture/software.md
+      - Overview: architecture/index.md
+      - Hardware Architecture: architecture/hardware.md
+      - Software Architecture: architecture/software.md
     - Installation:
-      - Overview: docs/building/index.md
-      - Software Tools/Libraries: docs/building/overview/index.md
-      - Building Host Software: docs/building/software/index.md
-      - Building Hardware: docs/building/hardware/index.md
-    - Custom Tags: docs/custom/index.md
-    - Licenses: docs/license/index.md
-    - Acknowledgement: docs/Acknowledgement.md
-    - Contacts: docs/contact.md
+      - Overview: building/index.md
+      - Software Tools/Libraries: building/overview/index.md
+      - Building Host Software: building/software/index.md
+      - Building Hardware: building/hardware/index.md
+    - Custom Tags: custom/index.md
+    - Licenses: license/index.md
+    - Acknowledgement: Acknowledgement.md
+    - Contacts: contact.md

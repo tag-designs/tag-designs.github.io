@@ -21,9 +21,9 @@ We consider the host software in three categories -- the tag and monitor librari
 ### 1.1 Tag/Monitor Libraries
 
 The monitor library provides connectivity, via USB, to the baseboard which emulates an stlink device.  The monitor library utilizes libusb which is
-licensed under the [lesser gpl 2 licence](../../lgpl2_1.txt).  In addition, the monitor library code utilizes constants and ideas from stlink-org which is licensed under a [BSD 3-clause licence](../../stlink-org-license/).   
+licensed under the [lesser gpl 2 licence](../lgpl2_1.txt).  In addition, the monitor library code utilizes constants and ideas from stlink-org which is licensed under a [BSD 3-clause licence](../stlink-org-license/).   
 
-The tag library uses code built with the Google ProtoBuf compiler and linked to the Google ProtoBuf libraries that code is licensed under a [Google License](../../protobuf-license.txt).
+The tag library uses code built with the Google ProtoBuf compiler and linked to the Google ProtoBuf libraries that code is licensed under a [Google License](../protobuf-license.txt).
 
 ### 1.2  Command-line Applications
 
