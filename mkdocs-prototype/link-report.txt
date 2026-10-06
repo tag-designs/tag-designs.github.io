@@ -1,0 +1,4 @@
+BROKEN  docs/license/index.html  ->  /software_license
+BROKEN  docs/license/index.html  ->  /lgplv3.txt
+
+759 relative references checked, 2 broken

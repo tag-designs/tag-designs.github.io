@@ -1,0 +1,27 @@
+OK  docs/index.md  (156 words)
+OK  docs/background/index.md  (746 words)
+OK  docs/docs/Acknowledgement.md  (44 words)
+OK  docs/docs/index.md  (0 words)
+OK  docs/docs/architecture/index.md  (0 words)
+OK  docs/docs/architecture/hardware.md  (513 words)
+OK  docs/docs/architecture/software.md  (2317 words)
+OK  docs/docs/bittag/index.md  (1092 words)
+OK  docs/docs/building/index.md  (1463 words)
+OK  docs/docs/building/hardware/index.md  (28 words)
+OK  docs/docs/building/overview/index.md  (601 words)
+OK  docs/docs/building/software/index.md  (98 words)
+OK  docs/docs/contact.md  (7 words)
+OK  docs/docs/custom/index.md  (2739 words)
+OK  docs/docs/license/index.md  (346 words)
+OK  docs/docs/userguides/index.md  (7 words)
+OK  docs/docs/userguides/btviz/index.md  (719 words)
+OK  docs/docs/userguides/cli/index.md  (116 words)
+OK  docs/docs/userguides/fabrication/Tools/index.md  (649 words)
+OK  docs/docs/userguides/fabrication/index.md  (0 words)
+OK  docs/docs/userguides/legharness/index.md  (712 words)
+OK  docs/docs/userguides/preflight/index.md  (1035 words)
+OK  docs/docs/userguides/qtmon/index.md  (1097 words)
+
+================================================================
+23 pages checked, 0 source words missing from output
+0 page(s) with anything to look at

@@ -1,0 +1,60 @@
+/* Everything the Hugo site got from Docsy, Bootstrap, pure.css and tachyons
+   that this content actually used. Thirty lines replaces two CDN stylesheets
+   and a Bootstrap build. */
+
+/* Two-column blocks. Material ships .grid; this only sets the gap and
+   collapses to one column on narrow screens, which Docsy's col-md also did. */
+.md-typeset .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1.2rem;
+  align-items: start;
+  margin: 1em 0;
+}
+
+/* Figures. The content writes <figure> directly in 31 places, so these rules
+   have to cover hand-written markup as well as converted shortcodes. */
+.md-typeset figure { margin: 0 0 1em 0; }
+.md-typeset figure img { max-width: 100%; height: auto; }
+.md-typeset figcaption {
+  font-size: 0.75rem;
+  font-style: italic;
+  color: var(--md-default-fg-color--light);
+  text-align: center;
+  margin-top: 0.3em;
+}
+
+/* Floated figures, from the Docsy/Bootstrap utility classes used by the
+   figure shortcode. */
+.md-typeset .float-right { float: right; margin: 0 0 1em 1.2em; max-width: 45%; }
+.md-typeset .float-left  { float: left;  margin: 0 1.2em 1em 0;  max-width: 45%; }
+.md-typeset .text-right  { text-align: right; }
+@media screen and (max-width: 44.98em) {
+  .md-typeset .float-right,
+  .md-typeset .float-left { float: none; max-width: 100%; margin: 0 0 1em 0; }
+}
+
+/* Table captions, written as <div class="table-caption"> in the content. */
+.md-typeset .table-caption {
+  font-size: 0.78rem;
+  margin: 1em 0 0.3em 0;
+}
+.md-typeset .table-caption .table-number { font-weight: 700; }
+
+/* Reference list: hanging indent, which is what a bibliography wants and what
+   the citation plugin was doing for us. */
+.md-typeset .reference {
+  padding-left: 2em;
+  text-indent: -2em;
+  margin: 0.4em 0;
+  font-size: 0.78rem;
+}
+
+/* Images the content marks with a #center fragment -- a hugo-book artifact
+   that outlived two theme migrations. Kept working rather than edited out of
+   12 pages. */
+.md-typeset img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

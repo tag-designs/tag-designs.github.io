@@ -1,0 +1,104 @@
+# Prototype MkDocs config for the tag-designs documentation site.
+#
+# Deliberately a near-copy of software/host/docs/mkdocs.yml and
+# software/docs/developer/mkdocs.yml: same theme, same palette, same extension
+# set. The three additions this site needs are arithmatex (one page uses
+# inline math), the extra stylesheet (floated figures, two-column grids,
+# hanging-indent references), and smarty.
+
+site_name: Sub-gram Tags
+site_description: Ultralight data loggers for songbirds
+site_author: Geoffrey Brown
+# tag-designs.github.io is an organization site, so Pages serves it from the
+# domain root rather than a /repo/ subpath. Only the sitemap and the canonical
+# link tags depend on this; MkDocs writes internal links relative.
+site_url: https://tag-designs.github.io/
+
+docs_dir: docs
+site_dir: site
+# true, unlike the other two sites in this project. The content writes
+# relative paths like ../images/x.png against Hugo's pretty URLs, where a
+# page lives at /docs/architecture/hardware/. Serving hardware.html in
+# /docs/architecture/ instead would make every one of those resolve a level
+# too high. This also keeps the published URLs identical to the Hugo site.
+use_directory_urls: true
+
+theme:
+  name: material
+  icon:
+    logo: material/bird
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - smarty
+  - tables
+  - pymdownx.details
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - About: index.md
+  - Background: background/index.md
+  - Documentation:
+    - Overview: docs/index.md
+    - BitTag: docs/bittag/index.md
+    - User Guides:
+      - Overview: docs/userguides/index.md
+      - Preparing for Flight: docs/userguides/preflight/index.md
+      - Tag Configuration: docs/userguides/qtmon/index.md
+      - Loop Harnesses: docs/userguides/legharness/index.md
+      - Visualization: docs/userguides/btviz/index.md
+      - Command-Line Tools: docs/userguides/cli/index.md
+      - Fabrication:
+        - Overview: docs/userguides/fabrication/index.md
+        - Tools: docs/userguides/fabrication/Tools/index.md
+    - Tag Architecture:
+      - Overview: docs/architecture/index.md
+      - Hardware Architecture: docs/architecture/hardware.md
+      - Software Architecture: docs/architecture/software.md
+    - Installation:
+      - Overview: docs/building/index.md
+      - Software Tools/Libraries: docs/building/overview/index.md
+      - Building Host Software: docs/building/software/index.md
+      - Building Hardware: docs/building/hardware/index.md
+    - Custom Tags: docs/custom/index.md
+    - Licenses: docs/license/index.md
+    - Acknowledgement: docs/Acknowledgement.md
+    - Contacts: docs/contact.md
