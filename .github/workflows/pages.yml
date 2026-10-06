@@ -52,11 +52,9 @@ jobs:
       - name: Build
         run: mkdocs build --strict
 
-      # Two references in the content point at files that have never existed
-      # (/lgplv3.txt and /software_license on the licenses page), so this step
-      # reports rather than fails. Fix those and it can become blocking.
+      # Every relative reference resolves, so a new broken one fails the
+      # build rather than being reported and ignored.
       - name: Check that relative links resolve
-        continue-on-error: true
         run: python3 check_links.py site
 
       - name: Upload Pages artifact

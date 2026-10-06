@@ -3,7 +3,7 @@
 # Applicable Licenses
 
 The code in this repository builds upon the contributions of a number of other projects.   Unless otherwise stated, or unless other license terms dominate, the software developed for this project is distributed under 
-a [BSD 3-clause license](/software_license).
+a [BSD 3-clause license](https://opensource.org/license/bsd-3-clause).
 
 For example, the Qt based applications were developed using the Qt GPL terms, therefore those applications honor the terms of that licence.  In contrast, the command-line applications rely on libraries whose license terms that do not take precedence over the project license.
 
@@ -31,7 +31,7 @@ The command-line applications use the monitor and tag libraries; any other code 
 
 ### 1.3 Qt Based Applications
 
-The two Qt based applications were developed under the Qt open source license terms and hence the use of Qt libraries is covered by the [LGPLv3](/lgplv3.txt) license.  ** how to get QT source code **
+The two Qt based applications were developed under the Qt open source license terms and hence the use of Qt libraries is covered by the [LGPLv3](https://www.gnu.org/licenses/lgpl-3.0.html) license.  ** how to get QT source code **
 
 The BitTag data visualization application (btviz) uses the QCustomPlot library and hence is licensed under [GPLv3](https://www.gnu.org/licenses/gpl-3.0.html).  The creator of [QCustomPlot](https://www.qcustomplot.com/) offers commercial licenses.  In this case, the Qt open source license terms apply to the use of Qt libraries, and our project license applies to the remaining source code.
 
