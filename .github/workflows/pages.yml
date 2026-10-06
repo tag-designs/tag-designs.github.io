@@ -57,6 +57,18 @@ jobs:
       - name: Check that relative links resolve
         run: python3 check_links.py site
 
+      # Logged so the shape of what is published is visible in the run
+      # itself, rather than something you find by clicking around the
+      # deployed site.
+      - name: Report what will be uploaded
+        run: |
+          echo "files: $(find site -type f | wc -l)"
+          echo "dirs:  $(find site -type d | wc -l)"
+          echo "deepest paths:"
+          find site -type f | awk -F/ '{print NF, $0}' | sort -rn | head -5 | cut -d' ' -f2-
+          test -f site/docs/architecture/hardware/index.html \
+            || { echo "a known deep page is missing from the build"; exit 1; }
+
       - name: Upload Pages artifact
         if: ${{ env.PUBLISH == 'true' }}
         uses: actions/upload-pages-artifact@v4
