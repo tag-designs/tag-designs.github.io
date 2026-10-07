@@ -260,7 +260,7 @@ In developing prototypes we have primarily used two suppliers -- Macrofab and PC
 
 ## References 
 
-<span id="ref-bruderer2010ia"></span>Bruderer, Peter, Boldt & Liechti (2010). Wing-beat characteristics of birds recorded with tracking radar and cine camera. *Ibis*, 152(2), 272-291. <https://doi.org/https://doi.org/10.1111/j.1474-919X.2010.01014.x>
+<span id="ref-bruderer2010ia"></span>Bruderer, Peter, Boldt & Liechti (2010). Wing-beat characteristics of birds recorded with tracking radar and cine camera. *Ibis*, 152(2), 272-291. <https://doi.org/10.1111/j.1474-919X.2010.01014.x>
 {: .reference }
 
 <span id="ref-dhanjal-adams2018cb"></span>Dhanjal-Adams, Bauer, Emmenegger, Hahn, Lisovski et al. (2018). Spatiotemporal Group Dynamics in a Long-Distance Migratory Bird. *Current Biology*, 28(17), 2824-2830.e3. <https://doi.org/10.1016/j.cub.2018.06.054>
@@ -269,7 +269,7 @@ In developing prototypes we have primarily used two suppliers -- Macrofab and PC
 <span id="ref-fudickar2012mee"></span>Fudickar, Wikelski & Partecke (2012). Tracking migratory songbirds: Accuracy of light-level loggers (geolocators) in forest habitats. *Methods in Ecology and Evolution*, 3(1), 47-52. <https://doi.org/10.1111/j.2041-210X.2011.00136.x>
 {: .reference }
 
-<span id="ref-gleiss2011mee"></span>Gleiss, Wilson & Shepard (2011). Making overall dynamic body acceleration work: on the theory of acceleration as a proxy for energy expenditure. *Methods in Ecology and Evolution*, 2(1), 23-33. <https://doi.org/https://doi.org/10.1111/j.2041-210X.2010.00057.x>
+<span id="ref-gleiss2011mee"></span>Gleiss, Wilson & Shepard (2011). Making overall dynamic body acceleration work: on the theory of acceleration as a proxy for energy expenditure. *Methods in Ecology and Evolution*, 2(1), 23-33. <https://doi.org/10.1111/j.2041-210X.2010.00057.x>
 {: .reference }
 
 <span id="ref-hedenstrom2016cb"></span>Hedenström, Norevik, Warfvinge, Andersson, Bäckman et al. (2016). Annual 10-Month Aerial Life Phase in the Common Swift Apus apus. *Current Biology*, 26(22), 3066-3070. <https://doi.org/10.1016/j.cub.2016.09.014>
