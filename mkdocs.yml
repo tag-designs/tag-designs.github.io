@@ -6,8 +6,14 @@
 # inline math), the extra stylesheet (floated figures, two-column grids,
 # hanging-indent references), and smarty.
 
-site_name: Ultralight Data loggers (tags) for Songbirds
-site_description: Ultralight data loggers for songbirds
+site_name: Ultralight Data Loggers (Tags) for Songbirds
+# This is the meta description: what a search engine shows under the title,
+# and the one place the three tag names appear together outside the pages
+# themselves. Keep it under about 160 characters, which is where Google
+# truncates, and keep it a sentence rather than a keyword list.
+site_description: >-
+  Open hardware archival data loggers under one gram for songbirds: BitTag
+  activity, PresTag barometric altitude, IMUTag inertial sensing.
 site_author: Geoffrey Brown
 # tag-designs.github.io is an organization site, so Pages serves it from the
 # domain root rather than a /repo/ subpath. Only the sitemap and the canonical

@@ -1,3 +1,10 @@
+---
+description: >-
+  Why bio-logging on small birds is hard: the mass and energy budgets that
+  rule out GPS and telemetry tags on 12-25 gram songbirds, and what archival
+  logging can do instead.
+---
+
 # Background
 
 ## Use of Tags in Studying Bird Behavior

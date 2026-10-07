@@ -63,13 +63,23 @@ who receives the programs.
 
 ## Hardware designs
 
-!!! note "Not yet settled"
+The board and mechanical designs in the
+[hardware repository](https://github.com/tag-designs/hardware) are licensed
+under the CERN Open Hardware Licence Version 2 &mdash; Permissive
+(`CERN-OHL-P-2.0`), Copyright &copy; 2018&ndash;2026 The Trustees of Indiana
+University.
 
-    The board and mechanical designs in the
-    [hardware repository](https://github.com/tag-designs/hardware) do not yet
-    carry a license, and the repository does not declare one. Until that is
-    decided, no license is granted for them here. Earlier project notes
-    suggested CERN-OHL-W, but nothing in the repository adopts it.
+You may use, study, modify, share and distribute the designs, and make and
+sell products from them, including in closed products, provided the notices
+travel with the source. The designs are distributed without warranty of any
+kind; the
+[licence text](https://ohwr.org/cern_ohl_p_v2.txt) gives the applicable
+conditions.
+
+Of the three CERN licence variants this is the permissive one, matching the
+MIT terms the software carries rather than imposing reciprocal obligations the
+software side does not have. The `STM32_open_pin_data` submodule is ST's and
+carries its own license.
 
 ## Citing this work
 

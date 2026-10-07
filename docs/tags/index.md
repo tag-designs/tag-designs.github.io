@@ -1,3 +1,10 @@
+---
+description: >-
+  The three tag families: BitTag activity logging at 1 Hz for a season,
+  PresTag barometric pressure and temperature, IMUTag accelerometer,
+  gyroscope and magnetometer at 100-1600 Hz.
+---
+
 # Tag Families
 
 A tag is a small archival data logger: it records to on-board memory and has no

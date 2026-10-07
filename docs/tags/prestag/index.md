@@ -1,3 +1,10 @@
+---
+description: >-
+  PresTag: an ultralight archival barometric pressure and temperature logger
+  for songbirds, used to recover flight altitude and climb and descent
+  profiles.
+---
+
 # PresTag
 
 PresTag is a pressure logger. It samples barometric pressure and temperature on

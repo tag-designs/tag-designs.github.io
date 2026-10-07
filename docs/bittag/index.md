@@ -1,3 +1,10 @@
+---
+description: >-
+  BitTag: an ultralight archival activity logger for songbirds, recording
+  one movement bit per second to on-board flash for up to a year on an
+  STM32L432.
+---
+
 # BitTag
 
 <div class="pure-g" markdown>

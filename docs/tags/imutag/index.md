@@ -1,3 +1,10 @@
+---
+description: >-
+  IMUTag: an ultralight archival inertial logger for songbirds, recording
+  acceleration, rotation, magnetic field and pressure at up to 1600 Hz to
+  resolve individual wingbeats.
+---
+
 # IMUTag
 
 IMUTag records how a bird moves. It writes acceleration, rotation rate,

@@ -1,4 +1,21 @@
-# About
+---
+description: >-
+  Open hardware archival data loggers under one gram for songbirds: BitTag
+  activity logging, PresTag barometric altitude, IMUTag inertial sensing.
+  Board designs, firmware and host software.
+---
+
+# Ultralight Archival Data Loggers for Songbirds
+
+This project designs open hardware **archival data loggers** &mdash; *tags*
+&mdash; for birds too small to carry a GPS or telemetry tag. The tags weigh
+under a gram, record to on-board flash rather than transmitting, and are read
+out once the bird is recaptured. Three families are documented here:
+[BitTag](bittag/index.md) for season-long activity logging,
+[PresTag](tags/prestag/index.md) for barometric pressure and flight altitude,
+and [IMUTag](tags/imutag/index.md) for high-rate inertial sensing fine enough
+to resolve individual wingbeats. The board designs, firmware and host software
+are all open.
 
 <div class="pure-g" markdown>
 
