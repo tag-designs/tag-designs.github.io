@@ -1,0 +1,66 @@
+name: External link check
+
+# check_links.py, which the Pages build runs on every push, resolves every
+# relative reference and fails the build on a broken one. It deliberately
+# skips http(s), so until now nothing validated the links that leave this
+# site -- including the cross-site contract URLs in mkdocs.yml that the
+# software and hardware sites promise to keep.
+#
+# This runs weekly and never on a push or a pull request. External links
+# break for reasons outside this repository: a site reorganizes, a host is
+# briefly down, an anonymous request gets rate-limited. That is news worth
+# a red run, not a reason to stop publishing. Relative links stay hard
+# enforced where they always were.
+
+on:
+  schedule:
+    # Mondays. Off the hour because scheduled jobs on the hour queue behind
+    # everyone else's; staggered against the other two repositories so the
+    # three do not check each other's pages at the same moment.
+    - cron: "17 7 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: link-check
+  cancel-in-progress: false
+
+jobs:
+  link-check:
+    name: Check external links
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Check links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # --scheme keeps this to web links. archive/ and Licenses/ are not
+          # published and are left out on purpose.
+          #
+          # 429 is accepted because a rate-limited host has told us nothing
+          # about the link, and GitHub rate-limits anonymous requests hard
+          # enough to matter here.
+          args: >-
+            --no-progress
+            --scheme http
+            --scheme https
+            --accept 200..=204,206,429
+            --max-retries 2
+            --timeout 20
+            --exclude-mail
+            --exclude-all-private
+            mkdocs.yml
+            README.md
+            'docs/**/*.md'
+          output: lychee-report.md
+          fail: true
+
+      # Readable in the run itself rather than behind an artifact download.
+      - name: Publish the report in the run summary
+        if: always() && hashFiles('lychee-report.md') != ''
+        run: cat lychee-report.md >> "$GITHUB_STEP_SUMMARY"

@@ -1,15 +1,18 @@
-Embedded software for this project utilizes the following libraries:
+# Licensing notes (superseded)
 
-* Chibios -- uses a mix of GPL3 and Apache 2.0
-* nanopb -- uses a proprietary open source license
+These were rough notes, written before the project's licensing was inventoried.
+They named Qt 5.15 and described the project code as GPL-3, neither of which is
+current, so they have been replaced by this pointer rather than left to be read
+as fact.
 
-The embedded software created for this project may be used with the GPL3 licence
+The published summary is [`docs/license/index.md`](../docs/license/index.md).
+The authoritative per-component lists live in the software repository, beside
+the code they describe:
 
-The host software for this project utilizes 
+- <https://github.com/tag-designs/software/blob/main/LICENSES/README.md>
+- <https://github.com/tag-designs/software/blob/main/LICENSES/host/README.md>
+- <https://github.com/tag-designs/software/blob/main/LICENSES/embedded/README.md>
 
-* QT 5.15 -- requires the use of LGPL version 3, GPL version 2, or GPL version 3
-* libusb  -- uses the GNU Lessr General Public Licence version 2.1
-
-The host software for this project may be used with the GPL3 license
-
-The hardware designs for this project may be used with the CERN-OHL-W license.
+The hardware designs do not yet carry a license. The CERN-OHL-W mentioned in
+the original notes was a suggestion; nothing in the hardware repository adopts
+it.

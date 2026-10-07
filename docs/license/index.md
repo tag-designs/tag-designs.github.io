@@ -1,45 +1,82 @@
 # Licenses
 
-# Applicable Licenses
+The project's own code, host software and firmware alike, is licensed under the
+[MIT License](https://github.com/tag-designs/software/blob/main/LICENSE),
+Copyright &copy; 2018&ndash;2026 The Trustees of Indiana University. Some
+base-firmware files carry their own notice, "Copyright 2018 Geoffrey Brown,
+Licensed under the Apache License, Version 2.0", and remain under that license.
 
-The code in this repository builds upon the contributions of a number of other projects.   Unless otherwise stated, or unless other license terms dominate, the software developed for this project is distributed under 
-a [BSD 3-clause license](https://opensource.org/license/bsd-3-clause).
+Several of the programs built from that code link components that are available
+only under the GPL. Those programs, as distributed, are therefore covered by the
+[GNU General Public License, version 3](https://www.gnu.org/licenses/gpl-3.0.html):
 
-For example, the Qt based applications were developed using the Qt GPL terms, therefore those applications honor the terms of that licence.  In contrast, the command-line applications rely on libraries whose license terms that do not take precedence over the project license.
+| Distributed program | GPL component | Its license |
+| --- | --- | --- |
+| Every tag and base-board firmware image | ChibiOS/RT kernel, OS library and Cortex&#8209;M ports | GPL-3.0-only |
+| `sensorviz`, `btviz` | QCustomPlot 2.1.1, statically linked | GPL-3.0-or-later |
+| `qtcalibrate` | Qt Quick 3D and Qt Quick Timeline | GPL-3.0-only |
 
-**A Request**
+MIT is compatible with GPL-3.0, so the MIT code can be combined into those
+programs. Each program as a whole is conveyed under GPL-3.0, while the MIT
+grant still applies to the project's own code taken on its own. The remaining
+host programs and the external flash loaders contain no GPL code.
 
-We request that any use of this work or derivatives of this work in scientific research appropriately cite our contributions in any publications.
+## Third-party components
 
-how to cite:
+The software repository carries one index per side, listing every third-party
+component with its version, its license, and which programs it is used in. Each
+component has a notice file giving its copyright, where it is used and where its
+source is. These are the authoritative lists, kept beside the code they
+describe:
 
+[Host tools and their manual](https://github.com/tag-designs/software/blob/main/LICENSES/host/README.md){ .md-button }
+[Firmware and flash loaders](https://github.com/tag-designs/software/blob/main/LICENSES/embedded/README.md){ .md-button }
 
-## 1. Host Software
+The same files travel with the software itself rather than only living on
+GitHub: the host packages install them as `tag_tools/licenses`, builds that
+install firmware or loaders place them alongside as `licenses/`, and the
+firmware release archive carries them as `firmware/licenses`.
 
-We consider the host software in three categories -- the tag and monitor libraries,  and the various applications.   The tag/monitor libraries build upon libraries that are compatible with our project license.
+The inventory behind both indexes was taken on 6 October 2026. Each license was
+read from the component's own license file or source header rather than from
+package metadata. The
+[licensing overview](https://github.com/tag-designs/software/blob/main/LICENSES/README.md)
+describes how the notices are organized and kept current.
 
-### 1.1 Tag/Monitor Libraries
+## Getting the source
 
-The monitor library provides connectivity, via USB, to the baseboard which emulates an stlink device.  The monitor library utilizes libusb which is
-licensed under the [lesser gpl 2 licence](../lgpl2_1.txt).  In addition, the monitor library code utilizes constants and ideas from stlink-org which is licensed under a [BSD 3-clause licence](../stlink-org-license/).   
+For the programs distributed under the GPL, the complete corresponding source
+is the [software repository](https://github.com/tag-designs/software) at the
+release tag the package was built from — `vX.Y` for the host tools and the
+flash loaders, `fw-vX.Y` for firmware images.
 
-The tag library uses code built with the Google ProtoBuf compiler and linked to the Google ProtoBuf libraries that code is licensed under a [Google License](../protobuf-license.txt).
+For the host tools that also means the third-party sources the repository
+names: the vcpkg ports at the baseline recorded in `vcpkg-configuration.json`,
+and Qt 6.8.2 from
+[the Qt archive](https://download.qt.io/archive/qt/6.8/6.8.2/single/). For
+firmware it means the [ChibiOS](https://github.com/ChibiOS/ChibiOS) submodule
+at the commit that release tag records, which is also written into each image's
+`*-build-manifest.json`.
 
-### 1.2  Command-line Applications
+Either offer is valid for at least three years from the release date, to anyone
+who receives the programs.
 
-The command-line applications use the monitor and tag libraries; any other code is licensed under the default terms described above.
+## Hardware designs
 
-### 1.3 Qt Based Applications
+!!! note "Not yet settled"
 
-The two Qt based applications were developed under the Qt open source license terms and hence the use of Qt libraries is covered by the [LGPLv3](https://www.gnu.org/licenses/lgpl-3.0.html) license.  ** how to get QT source code **
+    The board and mechanical designs in the
+    [hardware repository](https://github.com/tag-designs/hardware) do not yet
+    carry a license, and the repository does not declare one. Until that is
+    decided, no license is granted for them here. Earlier project notes
+    suggested CERN-OHL-W, but nothing in the repository adopts it.
 
-The BitTag data visualization application (btviz) uses the QCustomPlot library and hence is licensed under [GPLv3](https://www.gnu.org/licenses/gpl-3.0.html).  The creator of [QCustomPlot](https://www.qcustomplot.com/) offers commercial licenses.  In this case, the Qt open source license terms apply to the use of Qt libraries, and our project license applies to the remaining source code.
+## Citing this work
 
-## 2. Embedded Software
+We request that any use of this work, or of derivatives of this work, in
+scientific research appropriately cite our contributions in any publications.
 
-### 2.1 Base Boards
+!!! note "Citation pending"
 
-
-### 2.2 Tags
-
-## 3. Hardware
+    The preferred citation has not been settled. Until it appears here, please
+    [get in touch](../contact.md) and we will tell you what to cite.
