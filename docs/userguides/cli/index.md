@@ -1,31 +1,21 @@
 # Command-Line Tools
 
-The software library upon which the configuration tool is built makes it easy to create command-line tools.  For example, we make extensive use of a `tag-test` tool during the tag build process.  This tool sets and checks the internal clock and runs the tag self-test routines.
+The library that Tag Monitor is built on also backs a set of command-line
+tools. They do the same work without a graphical interface, which matters in
+two places: during tag fabrication, where each board is tested and clock-set in
+turn, and in data processing, where a step belongs in a script rather than in a
+person's hands.
 
-```text
-~/Research/NanoTag/build$ ./bin/tag-test
-Board name: BitTag V5
-Build time and date: Nov 22 2020 : 10:29:27
-Internal Flash size: 256kb
-External Flash size: 0kb
-Repo: git@github.iu.edu:geobrown/NanoTag.git
-Repo hash: 3bde753
-UUID: 20383055324850090051006E
-Voltage: 3.04
-Initial Clock drift: -0.07
-#  Checking RTC (2 second delay)
-Clock drift after setting: -0.02
-State: IDLE
-#  Running test
-Test Result: ALL_PASSED
-```
+| Tool | Purpose |
+| --- | --- |
+| `tag-test` | Set and check the internal clock, run the self-test routines |
+| `tag-info` | Report hardware and firmware revisions, state and voltage |
+| `tag-cal` | Calibrate a tag |
+| `tag-start`, `tag-stop` | Start and stop logging |
+| `tag-reset` | Reset a tag |
+| `tag-dwnld` | Download data from a stopped tag |
 
-We have planned, but not yet built, a tool to configure tags from stored configuration files.  This tool will:
+[Command-line reference](https://tag-designs.github.io/software/user/cli/index.html){ .md-button }
 
-* run the self-test
-* synchronize the clock
-* print tag information
-* configure the tag from a file
-
-We have developed a simple command line tool -- `tag-dwnld` that downloads data from stopped tags.   In addition, we have developed a primitive command line interfaces `tag-cli` that admits reading the status from, stopping, and erasing tags.
-
+Each tool's options and output are documented in the software documentation,
+along with the data-processing workflow.

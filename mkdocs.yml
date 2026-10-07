@@ -66,6 +66,16 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
 
+plugins:
+  - search
+  # building/overview/ and building/software/ described host build steps the
+  # software repository now documents itself. Their URLs may be cited, so they
+  # redirect to the page that dispatches to the right repository.
+  - redirects:
+      redirect_maps:
+        building/overview/index.md: building/index.md
+        building/software/index.md: building/index.md
+
 extra_css:
   - stylesheets/extra.css
 
@@ -91,17 +101,15 @@ nav:
       - Loop Harnesses: userguides/legharness/index.md
       - Visualization: userguides/btviz/index.md
       - Command-Line Tools: userguides/cli/index.md
-      - Fabrication:
+      - Tag Assembly:
         - Overview: userguides/fabrication/index.md
-        - Tools: userguides/fabrication/Tools/index.md
+        - Tools and Supplies: userguides/fabrication/Tools/index.md
     - Tag Architecture:
       - Overview: architecture/index.md
       - Hardware Architecture: architecture/hardware.md
       - Software Architecture: architecture/software.md
     - Installation:
       - Overview: building/index.md
-      - Software Tools/Libraries: building/overview/index.md
-      - Building Host Software: building/software/index.md
       - Building Hardware: building/hardware/index.md
     - Custom Tags: custom/index.md
     - Licenses: license/index.md
