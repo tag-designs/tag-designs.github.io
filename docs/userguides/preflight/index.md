@@ -169,7 +169,9 @@ For cutting tape and harness material. The smaller the better.
 
 <div markdown>
 
-Configures and downloads data from BitTag
+Configures and downloads data from BitTag.
+
+[Tag Monitor reference](https://tag-designs.github.io/software/user/apps/qtmonitor.html)
 
 </div>
 
@@ -188,6 +190,8 @@ Configures and downloads data from BitTag
 <div markdown>
 
 Displays data and generates actograms.
+
+[Bit Tag Visualizer reference](https://tag-designs.github.io/software/user/apps/btdataviz.html)
 
 </div>
 
@@ -378,7 +382,7 @@ Place Bit Tag in Programmer Base, following the same procedure as installing Bit
 
 <div markdown>
 
-* Open the monitor program.
+* Open the [monitor program](https://tag-designs.github.io/software/user/apps/qtmonitor.html).
 * Click "Attach"
 * Check that battery voltage is **3.0 volts** or greater. If not, detach and recharge. While still functional, battery voltage below 3.0 volts will result in suboptimal runtimes.
 
@@ -614,7 +618,7 @@ The Tape Application Stick can also be used to gently peel up the tape.
 
 * Place Bit Tag into Programmer Base.
   -   Note: Ensure Programmer Base is plugged into the computer first.
-* Open the monitor program and attach.
+* Open the [monitor program](https://tag-designs.github.io/software/user/apps/qtmonitor.html) and attach.
 
 </div>
 
@@ -662,14 +666,16 @@ Stop the BitTag.
 
 ### 2 Data Visualization
 
-See Section ???
+The steps below cover the common case. For the full guide -- filtering,
+actograms, sun elevation and export -- see the
+[Bit Tag Visualizer reference](https://tag-designs.github.io/software/user/apps/btdataviz.html).
 
 
 <div class="grid" markdown>
 
 <div markdown>
 
-* Open btviz
+* Open [btviz](https://tag-designs.github.io/software/user/apps/btdataviz.html)
 
 * To import data click 'load' and select data file (data file should have a .txt extension)
 

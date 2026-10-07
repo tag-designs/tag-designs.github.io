@@ -88,12 +88,19 @@ nav:
   - Background: background/index.md
   - Documentation:
     # The software and hardware repositories publish their own sites under
-    # /software/ and /hardware/. This site links only to the four contract
-    # URLs those sites promise to keep; deeper links are theirs to change.
+    # /software/ and /hardware/. The nav entries below are the contract URLs
+    # those sites promise to keep. Pages elsewhere on this site also link
+    # deeper, to the specific reference a reader needs mid-task; those deeper
+    # links are not validated by either build and want an external link
+    # checker in CI.
     - Software Documentation:
       - User Guide: https://tag-designs.github.io/software/user/
       - Developer Docs: https://tag-designs.github.io/software/developer/
-    - BitTag: bittag/index.md
+    - Tag Families:
+      - Overview: tags/index.md
+      - BitTag: bittag/index.md
+      - PresTag: tags/prestag/index.md
+      - IMUTag: tags/imutag/index.md
     - User Guides:
       - Overview: userguides/index.md
       - Preparing for Flight: userguides/preflight/index.md

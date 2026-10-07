@@ -8,7 +8,7 @@ The BitTag is a novel data logger capable of collecting *continuous* activity da
 depending upon battery size.  The operational concept is simple -- BitTag contains an accelerometer that
 detects movement and, based upon the movement dynamics, determines if the subject animal is active.  Each second BitTag generates a single bit of information -- 1 if the animal is active, 0 if it is it is not.
 These bits are aggregated (counted) over a measurement period 1 second to 5 minutes; at the end of each 
-aggregation period the counts are stored in non-volatile memory.  The choice of aggregation period depends upon the length of the experiment and is constrained by the amount of available storage -- 248 hours for raw data to 8660 hours for 5 minute aggregation. *In section ?? we present the design of a new BitTag with external memory capable of storing 8738 hours of data aggregated over 15 seconds.*
+aggregation period the counts are stored in non-volatile memory.  The choice of aggregation period depends upon the length of the experiment and is constrained by the amount of available storage -- 248 hours for raw data to 8660 hours for 5 minute aggregation. A later BitTag design adds external memory, which holds 8738 hours of data aggregated over 15 seconds.
 
 BitTag has been used in a variety of experiments with both captive and free animals including monitoring circadian rhythms, determining changes in activity around migration and egg laying, and when migrating animals fly.
 
