@@ -6,7 +6,7 @@
 # inline math), the extra stylesheet (floated figures, two-column grids,
 # hanging-indent references), and smarty.
 
-site_name: Sub-gram Tags
+site_name: Ultralight Data loggers (tags) for Songbirds
 site_description: Ultralight data loggers for songbirds
 site_author: Geoffrey Brown
 # tag-designs.github.io is an organization site, so Pages serves it from the
@@ -77,6 +77,12 @@ nav:
   - About: index.md
   - Background: background/index.md
   - Documentation:
+    # The software and hardware repositories publish their own sites under
+    # /software/ and /hardware/. This site links only to the four contract
+    # URLs those sites promise to keep; deeper links are theirs to change.
+    - Software Documentation:
+      - User Guide: https://tag-designs.github.io/software/user/
+      - Developer Docs: https://tag-designs.github.io/software/developer/
     - BitTag: bittag/index.md
     - User Guides:
       - Overview: userguides/index.md
