@@ -89,13 +89,16 @@ nav:
   - Documentation:
     # The software and hardware repositories publish their own sites under
     # /software/ and /hardware/. The nav entries below are the contract URLs
-    # those sites promise to keep. Pages elsewhere on this site also link
+    # those sites promise to keep. The software site splits user and developer
+    # documentation; the hardware site is a single site, so it contributes one
+    # URL rather than two. Pages elsewhere on this site also link
     # deeper, to the specific reference a reader needs mid-task; those deeper
     # links are not validated by either build and want an external link
     # checker in CI.
     - Software Documentation:
       - User Guide: https://tag-designs.github.io/software/user/
       - Developer Docs: https://tag-designs.github.io/software/developer/
+    - Hardware Documentation: https://tag-designs.github.io/hardware/
     - Tag Families:
       - Overview: tags/index.md
       - BitTag: bittag/index.md
