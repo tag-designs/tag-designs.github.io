@@ -1,0 +1,12 @@
+# tag-designs.github.io is an organization site, so it owns the domain root.
+# The project sites under /software/ and /hardware/ cannot serve a robots.txt
+# of their own -- this one governs them too, which is why every sitemap on the
+# domain is listed here.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://tag-designs.github.io/sitemap.xml
+Sitemap: https://tag-designs.github.io/software/user/sitemap.xml
+Sitemap: https://tag-designs.github.io/software/developer/sitemap.xml
+Sitemap: https://tag-designs.github.io/hardware/sitemap.xml
